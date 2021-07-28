@@ -1,0 +1,60 @@
+body {
+    color: teal;
+    background-color: #001f3f;
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+nav.about {
+    text-align: center;
+    background-color: #7FFFD4;
+    color: #00008B;
+} /*This is for the navigation element in the about-me.html page*/
+
+h1 {
+    border: 5px solid #000000;
+    text-align: center;
+    font-size: 55px;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(183,4,255,1);
+}
+
+p.description {
+    text-align: center;
+    font-style: italic;
+} /*This should be used for the description normally put underneath a header tag */
+
+footer {
+    text-align: center;
+    font-style: oblique;
+}
+
+h4.center {
+    text-align: center;
+} /* Only used for small headers that need to be in the center of the page */
+
+div.a {
+  background-color: teal;
+  color: #001f3f;
+}
+
+div.column {
+  column-count: 2
+} /* Only use this if a section just needs to have 2 columns. If it needs anything else, use another div class */

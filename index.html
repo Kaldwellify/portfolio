@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 			<meta charset="utf-8">
+			<link rel="stylesheet" href="stylesheet.css">
     	<title>Kennedy's Portfolio!</title>
   </head>
 
@@ -13,31 +14,38 @@
     </nav>
     <hr>
 
+		<div class="a">
     <article>
     	<header>
         	<h2>What is this Site?</h2>
       </header>
     <p>This site is my central hub for all my current and future projects during my time in the Front End Development certification program at the University of Washington!</p>
     </article>
+		</div>
+
 		<hr>
     <article>
     	<header>
         	<h2>My Projects!</h2>
-          <p>This contains links to all my projects and assignments during my time in the certification program at the UW!</p>
+          <p class="description">This contains links to all my projects and assignments during my time in the certification program at the UW! Just click on the image to head to the assignment!</p>
         </header>
-        <ul>
-        	<li><img src="images/html1.jpg" alt="HTML coding" align="left" width="120" height="70"><h4>My Semantic Elements Assignment</h4></li>
-        	<li><a href="https://github.com/Kaldwellify/semantic-elements">My Lesson 1 Assignment - Semantic Elements (GitHub link)</a></li>
-					<li><img src="images/placeholder1.png" alt="Thinking Emoji" align="left" width="120" height="70"><h4>Just a place holder for my next assignment</h4></li>
-					<li><a href="#">Link will go here</a></li>
-				</ul>
+				<div class="column">
+        	<h4>My Semantic Elements Assignment</h4>
+						<a target="_blank" href="https://github.com/Kaldwellify/semantic-elements">
+							<img src="images/html1.jpg" alt="HTML coding" width="120" height="70">
+						</a>
+					<h4>Just a place holder for my next assignment</h4>
+						<a target="_blank" href="#">
+							<img src="images/placeholder1.png" alt="Thinking Emoji" width="120" height="70">
+						</a>
+				</div>
   	</article>
 		<hr>
 
 		<article>
 			<header>
 				<h2>My Personal Projects</h2>
-				<p>This section contains my own personal projects that I'm going to be working on in my own time to sharpen up and practice my ability to code in HTML, CSS, and JavaScript.</p>
+				<p class="description">This section contains my own personal projects that I'm going to be working on in my own time to sharpen up and practice my ability to code in HTML, CSS, and JavaScript.</p>
 			</header>
 
 		</article>
