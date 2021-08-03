@@ -1,6 +1,8 @@
+
 body {
     color: teal;
     background-color: #001f3f;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 nav {
@@ -58,3 +60,15 @@ div.a {
 div.column {
   column-count: 2
 } /* Only use this if a section just needs to have 2 columns. If it needs anything else, use another div class */
+
+.box {
+  height: 300px;
+  width: 300px;
+  border-color: black;
+}
+
+.flexbox {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
