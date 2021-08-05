@@ -34,8 +34,8 @@ img {
     width: 150px;
 }
 
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(183,4,255,1);
+a img:hover {
+    box-shadow: 0 0 2px 1px rgba(183, 4, 255, 1);
 }
 
 p.description {
@@ -44,8 +44,12 @@ p.description {
 } /*This should be used for the description normally put underneath a header tag */
 
 footer {
-    text-align: center;
-    font-style: oblique;
+      background-color: teal;
+      text-align: center;
+      padding: 50px;
+      color: #001f3f;
+      font-style: oblique;
+      font-size: 1.3em;
 }
 
 h4.center {
@@ -58,17 +62,64 @@ div.a {
 }
 
 div.column {
-  column-count: 2
+  column-count: 2;
 } /* Only use this if a section just needs to have 2 columns. If it needs anything else, use another div class */
 
 .box {
+  display: flex;
   height: 300px;
   width: 300px;
+  padding: 30px;
   border-color: black;
+  border-style: solid;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center
 }
 
 .flexbox {
   justify-content: center;
   display: flex;
   flex-direction: row;
+  transition: background-color;
+}
+
+.sidebar {
+  flex: 35%;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutpage {
+  flex: 65%;
+  padding-left: 150px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+}
+
+ul li:nth-of-type(odd) {
+  color: #001f3f;
+  background-color: teal;
+}
+
+.flexbox div:nth-child(2n) {
+  border-style: dashed;
+}
+
+.box:hover {
+  transition: background-color 0.3s ease;
+  background-color: #213970;
+  color: #210070;
 }
