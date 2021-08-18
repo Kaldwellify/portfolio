@@ -1,60 +1,98 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-    color: teal;
-    background-color: #001f3f;
-    font-family: 'Open Sans Condensed', sans-serif;
+  color: #444444;
+  background-color: #ffffff;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header {
+  padding: 80px;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-size: 300%;
+}
+
+header p {
+  text-transform: uppercase;
+  color: #e6e6e6;
 }
 
 nav {
-    text-align: center;
-    background-color: black;
-    color: white;
+  overflow: hidden;
+  padding-left: 15px;
+  height: 75px;
 }
 
-nav.about {
-    text-align: center;
-    background-color: #7FFFD4;
-    color: #00008B;
-} /*This is for the navigation element in the about-me.html page*/
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav li {
+  float: left;
+  display: inline;
+  padding: 14px 20px;
+}
+
+/*This is for the navigation element in the about-me.html page*/
 
 h1 {
-    border: 5px solid #000000;
-    text-align: center;
-    font-size: 55px;
+  text-align: center;
+  font-size: 55px;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    padding: 5px;
-    width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
 }
 
 a img:hover {
-    box-shadow: 0 0 2px 1px rgba(183, 4, 255, 1);
+  box-shadow: 0 0 2px 1px rgba(183, 4, 255, 1);
 }
 
 p.description {
-    text-align: center;
-    font-style: italic;
-} /*This should be used for the description normally put underneath a header tag */
+  text-align: center;
+  font-style: italic;
+}
+
+/*This should be used for the description normally put underneath a header tag */
 
 footer {
-      background-color: teal;
-      text-align: center;
-      padding: 50px;
-      color: #001f3f;
-      font-style: oblique;
-      font-size: 1.3em;
+  background-image: linear-gradient(230deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  text-align: center;
+  padding: 30px;
+  color: #ffffff;
+  font-style: oblique;
+  font-size: 1.3em;
 }
 
 h4.center {
-    text-align: center;
-} /* Only used for small headers that need to be in the center of the page */
+  text-align: center;
+}
+
+/* Only used for small headers that need to be in the center of the page */
 
 div.a {
   background-color: teal;
@@ -63,7 +101,9 @@ div.a {
 
 div.column {
   column-count: 2;
-} /* Only use this if a section just needs to have 2 columns. If it needs anything else, use another div class */
+}
+
+/* Only use this if a section just needs to have 2 columns. If it needs anything else, use another div class */
 
 .box {
   display: flex;
@@ -109,11 +149,6 @@ div.column {
   padding-bottom: 100px;
 }
 
-ul li:nth-of-type(odd) {
-  color: #001f3f;
-  background-color: teal;
-}
-
 .flexbox div:nth-child(2n) {
   border-style: dashed;
 }
@@ -122,4 +157,46 @@ ul li:nth-of-type(odd) {
   transition: background-color 0.3s ease;
   background-color: #213970;
   color: #210070;
+}
+
+/* Contact page styling */
+
+.inputform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  display: block;
+  margin: .5rem 0 1rem 0;
+  width: 50vw;
+  border-radius: 0;
+  border-style: solid;
+}
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+input[type=submit]:hover {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+input {
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 4px solid;
+  border-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) 1;
 }
